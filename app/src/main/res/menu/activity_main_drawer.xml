@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_menu"
+            android:icon="@drawable/mainmenu"
+            android:title="@string/menu_main" />
+        <item
+            android:id="@+id/nav_cardio"
+            android:icon="@drawable/cardio"
+            android:title="@string/menu_cardio" />
+        <item
+            android:id="@+id/nav_crossfit"
+            android:icon="@drawable/crossfit"
+            android:title="@string/menu_crossfit" />
+        <item
+            android:id="@+id/nav_bodybuilding"
+            android:icon="@drawable/weight"
+            android:title="@string/menu_bodybuilding" />
+        <item
+            android:id="@+id/nav_at_home"
+            android:icon="@drawable/athome"
+            android:title="@string/menu_at_home" />
+        <item
+            android:id="@+id/nav_results"
+            android:icon="@drawable/results"
+            android:title="@string/menu_results" />
+        <item
+            android:id="@+id/nav_goals"
+            android:icon="@drawable/goals"
+            android:title="@string/menu_goals" />
+        <item
+            android:id="@+id/nav_bio"
+            android:icon="@drawable/personicon"
+            android:title="@string/menu_bio" />
+        <item
+            android:id="@+id/nav_settings"
+            android:icon="@drawable/settings"
+            android:title="@string/menu_settings" />
+
+    </group>
+</menu>

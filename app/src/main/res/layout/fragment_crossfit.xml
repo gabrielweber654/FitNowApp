@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.crossfit.CrossfitFragment">
+
+//first 5 imageviews are dotted lines that separate each exercise
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:layerType="software"
+        android:src="@drawable/dotted"
+        app:layout_constraintTop_toBottomOf="@+id/exercises"
+        tools:ignore="ImageContrastCheck"
+        tools:layout_editor_absoluteX="0dp"
+        android:contentDescription="@string/dotted1" />
+
+    <ImageView
+        android:id="@+id/dotted2cf"
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:layout_marginTop="30dp"
+        android:layerType="software"
+        android:src="@drawable/dotted"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/exercise1"
+        tools:ignore="ImageContrastCheck"
+        android:contentDescription="@string/dotted5" />
+
+    <ImageView
+        android:id="@+id/dotted3cf"
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:layout_marginTop="30dp"
+        android:layerType="software"
+        android:src="@drawable/dotted"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/exercise2"
+        tools:ignore="ImageContrastCheck"
+        android:contentDescription="@string/dotted2" />
+
+    <ImageView
+        android:id="@+id/dotted4cf"
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:layout_marginTop="30dp"
+        android:layerType="software"
+        android:src="@drawable/dotted"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/exercise3"
+        tools:ignore="ImageContrastCheck"
+        android:contentDescription="@string/dotted3" />
+
+    <ImageView
+        android:id="@+id/dotted5cf"
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:layout_marginTop="30dp"
+        android:layerType="software"
+        android:src="@drawable/dotted"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/exercise4"
+        tools:ignore="ImageContrastCheck"
+        android:contentDescription="@string/dotted4" />
+
+    <TextView
+        android:id="@+id/time1"
+        android:layout_width="56dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="36dp"
+        android:text="@string/times20"
+        android:textSize="24sp"
+        app:layout_constraintStart_toEndOf="@+id/exercise1"
+        app:layout_constraintTop_toBottomOf="@+id/exercises" />
+
+    <TextView
+        android:id="@+id/time2"
+        android:layout_width="56dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="60dp"
+        android:text="@string/times15"
+        android:textSize="24sp"
+        app:layout_constraintStart_toEndOf="@+id/exercise2"
+        app:layout_constraintTop_toBottomOf="@+id/time1" />
+
+    <TextView
+        android:id="@+id/time3"
+        android:layout_width="56dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="60dp"
+        android:text="@string/times12"
+        android:textSize="24sp"
+        app:layout_constraintStart_toEndOf="@+id/exercise3"
+        app:layout_constraintTop_toBottomOf="@+id/time2" />
+
+
+    <TextView
+        android:id="@+id/time4"
+        android:layout_width="56dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="60dp"
+        android:text="@string/times15"
+        android:textSize="24sp"
+        app:layout_constraintStart_toEndOf="@+id/exercise4"
+        app:layout_constraintTop_toBottomOf="@+id/time3" />
+
+    <TextView
+        android:id="@+id/time5"
+        android:layout_width="56dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="60dp"
+        android:text="@string/time1min"
+        android:textSize="24sp"
+        app:layout_constraintStart_toEndOf="@+id/exercise5"
+        app:layout_constraintTop_toBottomOf="@+id/time4" />
+
+    <TextView
+        android:id="@+id/exercise1"
+        android:layout_width="179dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="36dp"
+        android:text="@string/arm_circles"
+        android:textSize="24sp"
+        app:layout_constraintStart_toEndOf="@+id/pic1"
+        app:layout_constraintTop_toBottomOf="@+id/exercises" />
+
+    <TextView
+        android:id="@+id/exercise2"
+        android:layout_width="179dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="60dp"
+        android:text="@string/pushup"
+        android:textSize="24sp"
+        app:layout_constraintStart_toEndOf="@+id/pic2"
+        app:layout_constraintTop_toBottomOf="@+id/exercise1" />
+
+    <TextView
+        android:id="@+id/exercise3"
+        android:layout_width="179dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="60dp"
+        android:text="@string/decline_pushup"
+        android:textSize="24sp"
+        app:layout_constraintStart_toEndOf="@+id/pic3"
+        app:layout_constraintTop_toBottomOf="@+id/exercise2" />
+
+    <TextView
+        android:id="@+id/exercise4"
+        android:layout_width="179dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="60dp"
+        android:text="@string/triceps"
+        android:textSize="24sp"
+        app:layout_constraintStart_toEndOf="@+id/pic4"
+        app:layout_constraintTop_toBottomOf="@+id/exercise3" />
+
+    <TextView
+        android:id="@+id/exercise5"
+        android:layout_width="179dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="60dp"
+        android:text="@string/chest_stretch"
+        android:textSize="24sp"
+        app:layout_constraintStart_toEndOf="@+id/pic5"
+        app:layout_constraintTop_toBottomOf="@+id/exercise4" />
+    //exercise total
+    <TextView
+        android:id="@+id/exercises"
+        android:layout_width="126dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginRight="32dp"
+        android:text="@string/exercise_amount_5"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    //minute total
+    <TextView
+        android:id="@+id/minutes"
+        android:layout_width="126dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginLeft="36dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/minute_total_20"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/pic1"
+        android:layout_width="85dp"
+        android:layout_height="78dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:contentDescription="@string/arm_circles"
+        android:src="@drawable/arm_circles"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/minutes" />
+    <ImageView
+        android:id="@+id/pic2"
+        android:layout_width="85dp"
+        android:layout_height="78dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="20dp"
+        android:contentDescription="@string/pushup"
+        android:src="@drawable/pushup"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pic1" />
+
+    <ImageView
+        android:id="@+id/pic3"
+        android:layout_width="85dp"
+        android:layout_height="78dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="20dp"
+        android:contentDescription="@string/decline_pushup"
+        android:src="@drawable/decline_pushups"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pic2"
+        tools:ignore="ImageContrastCheck" />
+
+    <ImageView
+        android:id="@+id/pic4"
+        android:layout_width="85dp"
+        android:layout_height="78dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="20dp"
+        android:contentDescription="@string/triceps"
+        android:src="@drawable/tricep_dips"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pic3" />
+
+    <ImageView
+        android:id="@+id/pic5"
+        android:layout_width="85dp"
+        android:layout_height="78dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="20dp"
+        android:contentDescription="@string/chest_stretch"
+        android:src="@drawable/chest_stretch"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pic4"
+        tools:ignore="ImageContrastCheck" />
+
+    <TextView
+        android:id="@+id/text_crossfit"
+        android:layout_width="29dp"
+        android:layout_height="28dp"
+        android:layout_gravity="center_horizontal"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

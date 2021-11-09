@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_menu">
+
+    <fragment
+        android:id="@+id/nav_menu"
+        android:name="com.example.navigation_slides.ui.menu.MenuFragment"
+        android:label="@string/menu_main"
+        tools:layout="@layout/fragment_menu" />
+    <fragment
+        android:id="@+id/nav_cardio"
+        android:name="com.example.navigation_slides.ui.cardio.CardioFragment"
+        android:label="@string/menu_cardio"
+        tools:layout="@layout/fragment_cardio" />
+
+    <fragment
+        android:id="@+id/nav_crossfit"
+        android:name="com.example.navigation_slides.ui.crossfit.CrossfitFragment"
+        android:label="@string/menu_crossfit"
+        tools:layout="@layout/fragment_crossfit" />
+
+    <fragment
+        android:id="@+id/nav_bodybuilding"
+        android:name="com.example.navigation_slides.ui.bodybuilding.BodybuildingFragment"
+        android:label="@string/menu_bodybuilding"
+        tools:layout="@layout/fragment_bodybuilding" />
+    <fragment
+        android:id="@+id/nav_at_home"
+        android:name="com.example.navigation_slides.ui.at_home.At_homeFragment"
+        android:label="@string/menu_at_home"
+        tools:layout="@layout/fragment_at_home" />
+    <fragment
+        android:id="@+id/nav_results"
+        android:name="com.example.navigation_slides.ui.results.ResultsFragment"
+        android:label="@string/menu_results"
+        tools:layout="@layout/fragment_results" />
+
+    <fragment
+        android:id="@+id/nav_goals"
+        android:name="com.example.navigation_slides.ui.goals.GoalsFragment"
+        android:label="@string/menu_goals"
+        tools:layout="@layout/fragment_goals" />
+    <fragment
+        android:id="@+id/nav_bio"
+        android:name="com.example.navigation_slides.ui.bio.BioFragment"
+        android:label="@string/menu_bio"
+        tools:layout="@layout/fragment_bio" />
+
+    <fragment
+        android:id="@+id/nav_settings"
+        android:name="com.example.navigation_slides.ui.settings.SettingsFragment"
+        android:label="@string/menu_settings"
+        tools:layout="@layout/fragment_settings" />
+</navigation>

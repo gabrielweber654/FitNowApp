@@ -1,0 +1,71 @@
+<resources>
+    <string name="app_name">navigation-slides</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">FitNow</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="menu_exercises">Exercises</string>
+    <string name="menu_cardio">Cardio</string>
+    <string name="menu_bodybuilding">Body Building</string>
+    <string name="menu_crossfit">CrossFit</string>
+    <string name="menu_at_home">At Home</string>
+    <string name="menu_results">Results</string>
+    <string name="menu_goals">Goals</string>
+    <string name="menu_bio">Bio</string>
+    <string name="menu_settings">Settings</string>
+    <string name="menu_main">Main Menu</string>
+
+    <string name="minute_total_10">10 minutes</string>
+    <string name="minute_total_15">15 minutes</string>
+    <string name="minute_total_20">20 minutes</string>
+    <string name="minute_total_24">24 minutes</string>
+    <string name="exercise_amount_5">5 exercises</string>
+
+    <string name="triceps">Tricep Dips</string>
+    <string name="chest_stretch">Chest Stretch</string>
+    <string name="decline_pushup">Decline Pushups</string>
+    <string name="pushup">Pushups</string>
+    <string name="arm_circles">Arm Circles</string>
+
+    <string name="arm_stretch">Arm Stretch</string>
+    <string name="narrow_pushups">Narrow Pushups</string>
+    <string name="dumbbell_press">Dumbbell Press</string>
+    <string name="lunges">Lunges</string>
+    <string name="reverse_flys">Reverse Flys</string>
+
+
+    <string name="squats">Squats</string>
+    <string name="hip_stretch">Hip Stretch</string>
+    <string name="mountain_climbers">Mountain Climb</string>
+    <string name="plank">Plank</string>
+    <string name="v_ups">V-Ups</string>
+
+    <string name="jogging">Jogging</string>
+    <string name="running">Running</string>
+    <string name="walking">Walking</string>
+    <string name="calf_stretch">Calf Stretch</string>
+
+    <string name="times20">3x20</string>
+    <string name="times15">3x15</string>
+    <string name="times12">3x12</string>
+
+    <string name="time1min">1:00</string>
+    <string name="time3min">3:00</string>
+    <string name="time5min">5:00</string>
+    <string name="time6min">6:00</string>
+    <string name="time10min">10:00</string>
+
+    <string name="dotted1">dotted</string>
+    <string name="dotted2">dotted</string>
+    <string name="dotted3">dotted</string>
+    <string name="dotted4">dotted</string>
+    <string name="dotted5">dotted</string>
+
+
+</resources>
