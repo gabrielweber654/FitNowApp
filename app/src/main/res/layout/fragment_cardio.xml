@@ -7,7 +7,6 @@
     tools:context=".ui.cardio.CardioFragment"
     tools:ignore="ExtraText">
 
-//first 5 imageviews are dotted lines that separate each exercise
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="5dp"
@@ -70,7 +69,7 @@
         app:layout_constraintTop_toBottomOf="@+id/exercise4"
         tools:ignore="ImageContrastCheck"
         android:contentDescription="@string/dotted2" />
-//exercise total
+
     <TextView
         android:id="@+id/exercises"
         android:layout_width="126dp"
@@ -82,7 +81,7 @@
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-//minute total
+
     <TextView
         android:id="@+id/minutes"
         android:layout_width="126dp"
@@ -286,4 +285,20 @@
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end|bottom"
+        android:layout_margin="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="16dp"
+        android:contentDescription="@string/add_workout"
+        android:src="@drawable/add"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:ignore="ImageContrastCheck" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

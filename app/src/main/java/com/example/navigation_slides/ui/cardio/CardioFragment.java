@@ -20,21 +20,17 @@ public class CardioFragment extends Fragment {
     private CardioViewModel cardioViewModel;
     private FragmentCardioBinding binding;
 
+
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
         cardioViewModel =
                 new ViewModelProvider(this).get(CardioViewModel.class);
 
         binding = FragmentCardioBinding.inflate(inflater, container, false);
-        View root = binding.getRoot();
 
+        View root = binding.getRoot();
         final TextView textView = binding.textCardio;
-        cardioViewModel.getText().observe(getViewLifecycleOwner(), new Observer<String>() {
-            @Override
-            public void onChanged(@Nullable String s) {
-                textView.setText(s);
-            }
-        });
+        cardioViewModel.getText().observe(getViewLifecycleOwner(), s -> textView.setText(s));
         return root;
     }
 

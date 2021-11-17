@@ -6,7 +6,6 @@
     android:layout_height="match_parent"
     tools:context=".ui.at_home.At_homeFragment">
 
-//first 5 imageviews are dotted lines that separate each exercise
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="5dp"
@@ -190,7 +189,7 @@
         android:textSize="24sp"
         app:layout_constraintStart_toEndOf="@+id/pic5"
         app:layout_constraintTop_toBottomOf="@+id/exercise4" />
-    //exercise total
+
     <TextView
         android:id="@+id/exercises"
         android:layout_width="126dp"
@@ -202,7 +201,7 @@
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-    //minute total
+
     <TextView
         android:id="@+id/minutes"
         android:layout_width="126dp"
@@ -262,7 +261,8 @@
         android:contentDescription="@string/v_ups"
         android:src="@drawable/v_ups"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/pic3" />
+        app:layout_constraintTop_toBottomOf="@+id/pic3"
+        tools:ignore="ImageContrastCheck" />
 
     <ImageView
         android:id="@+id/pic5"
@@ -275,6 +275,21 @@
         android:src="@drawable/hip_stretch"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/pic4"
+        tools:ignore="ImageContrastCheck" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end|bottom"
+        android:layout_margin="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="16dp"
+        android:contentDescription="@string/add_workout"
+        android:src="@drawable/add"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         tools:ignore="ImageContrastCheck" />
 
     <TextView

@@ -5,19 +5,139 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".ui.results.ResultsFragment">
+    <View
+        android:id="@+id/top"
+        style="@style/Divider"
+        app:layout_constraintBottom_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <View
+        android:id="@+id/middlebar"
+        style="@style/Test"
+        android:layout_marginTop="32dp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toTopOf="@+id/graph_title"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/completed_pic3" />
 
     <TextView
-        android:id="@+id/text_results"
-        android:layout_width="match_parent"
+        android:id="@+id/results_title"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:textAlignment="center"
-        android:layout_gravity="center_horizontal"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="24dp"
+        android:text="@string/completedWorkouts"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/top" />
+
+    <TextView
+        android:id="@+id/results_workout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="32dp"
+        android:text="@string/reverse_flys"
         android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/completed_pic1"
+        app:layout_constraintTop_toBottomOf="@+id/results_title" />
+
+    <TextView
+        android:id="@+id/results_workout2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="52dp"
+        android:text="@string/dumbbell_press"
+        android:textSize="20sp"
+        app:layout_constraintStart_toEndOf="@+id/completed_pic2"
+        app:layout_constraintTop_toBottomOf="@+id/results_workout1" />
+
+    <TextView
+        android:id="@+id/results_workout3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="56dp"
+        android:text="@string/triceps"
+        android:textSize="20sp"
+        app:layout_constraintStart_toEndOf="@+id/completed_pic3"
+        app:layout_constraintTop_toBottomOf="@+id/results_workout2" />
+
+    <TextView
+        android:id="@+id/graph_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="44dp"
+        android:gravity="center_horizontal"
+        android:text="@string/graph"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/completed_pic3" />
+
+    <ImageView
+        android:id="@+id/weight_tracking_graph"
+        android:layout_width="299dp"
+        android:layout_height="196dp"
+        android:layout_marginTop="16dp"
+        android:contentDescription="@string/weight_title"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/graph_title"
+        app:srcCompat="@drawable/weight_graph" />
+
+    <ImageView
+        android:id="@+id/completed_pic1"
+        android:layout_width="74dp"
+        android:layout_height="74dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/results_title"
+        app:srcCompat="@drawable/reverse_flys"
+        android:contentDescription="@string/reverse_flys" />
+
+    <ImageView
+        android:id="@+id/completed_pic2"
+        android:layout_width="74dp"
+        android:layout_height="74dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="8dp"
+        android:contentDescription="@string/dumbbell_press"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/completed_pic1"
+        app:srcCompat="@drawable/dumbbell_press"
+        tools:ignore="ImageContrastCheck" />
+
+    <ImageView
+        android:id="@+id/completed_pic3"
+        android:layout_width="74dp"
+        android:layout_height="74dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/completed_pic2"
+        app:srcCompat="@drawable/tricep_dips"
+        android:contentDescription="@string/triceps" />
+    <TextView
+        android:id="@+id/text_results"
+        android:layout_width="29dp"
+        android:layout_height="28dp"
+        android:layout_gravity="center_horizontal"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>

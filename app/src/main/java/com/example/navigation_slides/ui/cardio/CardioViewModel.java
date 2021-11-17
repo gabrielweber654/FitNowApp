@@ -13,6 +13,7 @@ public class CardioViewModel extends ViewModel {
         mText.setValue("");
     }
 
+
     public LiveData<String> getText() {
         return mText;
     }

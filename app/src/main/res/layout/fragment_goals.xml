@@ -7,17 +7,255 @@
     tools:context=".ui.goals.GoalsFragment">
 
     <TextView
-        android:id="@+id/text_goals"
-        android:layout_width="match_parent"
+        android:id="@+id/completed_title"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:textAlignment="center"
-        android:layout_gravity="center_horizontal"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/completed"
+        android:textSize="24sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/completed_1"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="32dp"
+        android:contentDescription="@string/completed_goal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/completed_title"
+        app:srcCompat="@android:drawable/checkbox_on_background"
+        tools:ignore="RedundantDescriptionCheck" />
+
+    <ImageView
+        android:id="@+id/completed_2"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="32dp"
+        android:contentDescription="@string/completed_goal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/completed_1"
+        app:srcCompat="@android:drawable/checkbox_on_background"
+        tools:ignore="RedundantDescriptionCheck" />
+
+    <ImageView
+        android:id="@+id/completed_3"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="32dp"
+        android:contentDescription="@string/completed_goal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/completed_2"
+        app:srcCompat="@android:drawable/checkbox_on_background"
+        tools:ignore="RedundantDescriptionCheck" />
+
+    <ImageView
+        android:id="@+id/completed_4"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="32dp"
+        android:contentDescription="@string/completed_goal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/completed_3"
+        app:srcCompat="@android:drawable/checkbox_on_background"
+        tools:ignore="RedundantDescriptionCheck" />
+
+    <TextView
+        android:id="@+id/completed_text_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="32dp"
+        android:text="@string/c1"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@+id/completed_1"
+        app:layout_constraintTop_toBottomOf="@+id/completed_title" />
+
+    <TextView
+        android:id="@+id/completed_text_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="32dp"
+        android:text="@string/c2"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@+id/completed_2"
+        app:layout_constraintTop_toBottomOf="@+id/completed_text_1" />
+
+    <TextView
+        android:id="@+id/completed_text_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="36dp"
+        android:text="@string/c3"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@+id/completed_3"
+        app:layout_constraintTop_toBottomOf="@+id/completed_text_2" />
+
+    <TextView
+        android:id="@+id/completed_text_4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="32dp"
+        android:text="@string/c4"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@+id/completed_4"
+        app:layout_constraintTop_toBottomOf="@+id/completed_text_3" />
+
+    <View
+        android:id="@+id/middlebar"
+        style="@style/Test"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/completed_text_4" />
+
+    <TextView
+        android:id="@+id/uncompleted_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/remaining"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/middlebar" />
+
+    <ImageView
+        android:id="@+id/uncompleted_1"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="32dp"
+        android:contentDescription="@string/uncompleted_goal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/uncompleted_title"
+        app:srcCompat="@android:drawable/checkbox_off_background"
+        tools:ignore="RedundantDescriptionCheck" />
+
+    <ImageView
+        android:id="@+id/uncompleted_2"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="32dp"
+        android:contentDescription="@string/uncompleted_goal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/uncompleted_1"
+        app:srcCompat="@android:drawable/checkbox_off_background"
+        tools:ignore="RedundantDescriptionCheck" />
+
+    <ImageView
+        android:id="@+id/uncompleted_3"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="32dp"
+        android:contentDescription="@string/uncompleted_goal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/uncompleted_2"
+        app:srcCompat="@android:drawable/checkbox_off_background"
+        tools:ignore="RedundantDescriptionCheck" />
+
+    <ImageView
+        android:id="@+id/uncompleted_4"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="32dp"
+        android:contentDescription="@string/uncompleted_goal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/uncompleted_3"
+        app:srcCompat="@android:drawable/checkbox_off_background"
+        tools:ignore="RedundantDescriptionCheck,ImageContrastCheck" />
+
+    <TextView
+        android:id="@+id/uncompleted_text_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="32dp"
+        android:text="@string/r1"
+        app:layout_constraintStart_toEndOf="@+id/uncompleted_1"
+        app:layout_constraintTop_toBottomOf="@+id/uncompleted_title" />
+
+    <TextView
+        android:id="@+id/uncompleted_text_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="36dp"
+        android:text="@string/r2"
+        app:layout_constraintStart_toEndOf="@+id/uncompleted_2"
+        app:layout_constraintTop_toBottomOf="@+id/uncompleted_text_1" />
+
+    <TextView
+        android:id="@+id/uncompleted_text_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="36dp"
+        android:text="@string/r3"
+        app:layout_constraintStart_toEndOf="@+id/uncompleted_3"
+        app:layout_constraintTop_toBottomOf="@+id/uncompleted_text_2" />
+
+    <TextView
+        android:id="@+id/uncompleted_text_4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="36dp"
+        android:text="@string/r4"
+        app:layout_constraintStart_toEndOf="@+id/uncompleted_4"
+        app:layout_constraintTop_toBottomOf="@+id/uncompleted_text_3" />
+
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end|bottom"
+        android:layout_margin="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="16dp"
+        android:contentDescription="@string/add_workout"
+        android:src="@drawable/use"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:ignore="ImageContrastCheck" />
+
+    <TextView
+        android:id="@+id/text_goals"
+        android:layout_width="29dp"
+        android:layout_height="28dp"
+        android:layout_gravity="center_horizontal"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>

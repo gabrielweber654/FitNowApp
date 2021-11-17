@@ -39,7 +39,6 @@
     <string name="lunges">Lunges</string>
     <string name="reverse_flys">Reverse Flys</string>
 
-
     <string name="squats">Squats</string>
     <string name="hip_stretch">Hip Stretch</string>
     <string name="mountain_climbers">Mountain Climb</string>
@@ -66,6 +65,48 @@
     <string name="dotted3">dotted</string>
     <string name="dotted4">dotted</string>
     <string name="dotted5">dotted</string>
+
+    <string name="results">Results</string>
+    <string name="completed"><u>Completed Goals</u></string>
+    <string name="completedWorkouts"><u>Completed Workouts</u></string>
+    <string name="graph"><u>Weight-Tracking Graph</u></string>
+    <string name="remaining"><u>Remaining Goals</u></string>
+    <string name="c1">Do chest workout</string>
+    <string name="c2">Do 50 push-ups</string>
+    <string name="c3">Run 3 miles</string>
+    <string name="c4">Do 3x15 reverse flys</string>
+    <string name="r1">Do ab workout</string>
+    <string name="r2">Do 100 crunches</string>
+    <string name="r3">Do 3x20 lunges</string>
+    <string name="r4">Do 3x12 narrow pushups</string>
+
+    <string name="soundswitch">Sound</string>
+    <string name="musicswitch">Music</string>
+    <string name="notswitch">Notifications</string>
+    <string name="vibrateswitch">Vibrate</string>
+    <string name="fitnow">Fit Now</string>
+
+    <string name="name_sample">Biola Bob</string>
+    <string name="age_sample">21</string>
+    <string name="weight_sample">160 lbs</string>
+    <string name="style_sample">CrossFit</string>
+    <string name="experience_sample">Moderate</string>
+
+    <string name="name_title">Name</string>
+    <string name="weight_title">Weight</string>
+    <string name="age_title">Age</string>
+    <string name="experience_title">Experience</string>
+    <string name="style_title">Style</string>
+    <string name="edit_title">EDIT</string>
+
+    <string name="completed_goal">Checked Box</string>
+    <string name="uncompleted_goal">Unchecked Box</string>
+    <string name="goal">Goal</string>
+    <string name="add_goal">Add Goal</string>
+    <string name="add_workout">Add Workout</string>
+
+
+
 
 
 </resources>

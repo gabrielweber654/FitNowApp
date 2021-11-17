@@ -6,18 +6,227 @@
     android:layout_height="match_parent"
     tools:context=".ui.bio.BioFragment">
 
-    <TextView
-        android:id="@+id/text_bio"
+    <ImageView
+        android:id="@+id/dotted1bio"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:textAlignment="center"
-        android:layout_gravity="center_horizontal"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_height="5dp"
+        android:layout_marginTop="16dp"
+        android:contentDescription="@string/dotted5"
+        android:layerType="software"
+        android:src="@drawable/dotted"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/bio1"
+        tools:ignore="ImageContrastCheck" />
+
+    <ImageView
+        android:id="@+id/dotted2bio"
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:layout_marginTop="16dp"
+        android:contentDescription="@string/dotted5"
+        android:layerType="software"
+        android:src="@drawable/dotted"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bio4"
+        tools:ignore="ImageContrastCheck" />
+
+    <ImageView
+        android:id="@+id/dotted3bio"
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:layout_marginTop="16dp"
+        android:contentDescription="@string/dotted5"
+        android:layerType="software"
+        android:src="@drawable/dotted"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bio3"
+        tools:ignore="ImageContrastCheck" />
+
+    <ImageView
+        android:id="@+id/dotted4bio"
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:layout_marginTop="16dp"
+        android:contentDescription="@string/dotted5"
+        android:layerType="software"
+        android:src="@drawable/dotted"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bio2"
+        tools:ignore="ImageContrastCheck" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="210dp"
+        android:layout_height="153dp"
+        android:layout_marginTop="28dp"
+        android:contentDescription="@string/fitnow"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/fitlogotransp" />
+
+    <TextView
+        android:id="@+id/bio1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="32dp"
+        android:text="@string/name_title"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <TextView
+        android:id="@+id/bio2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="32dp"
+        android:text="@string/weight_title"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bio1" />
+
+    <TextView
+        android:id="@+id/bio3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="32dp"
+        android:text="@string/age_title"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bio2" />
+
+    <TextView
+        android:id="@+id/bio4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="32dp"
+        android:text="@string/experience_title"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bio3" />
+
+    <TextView
+        android:id="@+id/bio5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="32dp"
+        android:text="@string/style_title"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bio4" />
+
+    <TextView
+        android:id="@+id/sample1"
+        android:layout_width="wrap_content"
+        android:layout_height="24dp"
+        android:layout_marginStart="150dp"
+        android:layout_marginLeft="150dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:text="@string/name_sample"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.923"
+        app:layout_constraintStart_toEndOf="@+id/bio1"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <TextView
+        android:id="@+id/sample2"
+        android:layout_width="wrap_content"
+        android:layout_height="24dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:text="@string/weight_sample"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.905"
+        app:layout_constraintStart_toEndOf="@+id/bio2"
+        app:layout_constraintTop_toBottomOf="@+id/sample1" />
+
+    <TextView
+        android:id="@+id/sample3"
+        android:layout_width="wrap_content"
+        android:layout_height="24dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:text="@string/age_sample"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.804"
+        app:layout_constraintStart_toEndOf="@+id/bio3"
+        app:layout_constraintTop_toBottomOf="@+id/sample2" />
+
+    <TextView
+        android:id="@+id/sample4"
+        android:layout_width="wrap_content"
+        android:layout_height="24dp"
+        android:layout_marginStart="118dp"
+        android:layout_marginLeft="118dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:text="@string/experience_sample"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.917"
+        app:layout_constraintStart_toEndOf="@+id/bio4"
+        app:layout_constraintTop_toBottomOf="@+id/sample3" />
+
+    <TextView
+        android:id="@+id/sample5"
+        android:layout_width="68dp"
+        android:layout_height="24dp"
+        android:layout_marginTop="32dp"
+        android:ems="10"
+        android:text="@string/style_sample"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.889"
+        app:layout_constraintStart_toEndOf="@+id/bio5"
+        app:layout_constraintTop_toBottomOf="@+id/sample4" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:text="@string/edit_title"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sample5" />
+
+    <TextView
+        android:id="@+id/text_bio"
+        android:layout_width="29dp"
+        android:layout_height="28dp"
+        android:layout_gravity="center_horizontal"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
