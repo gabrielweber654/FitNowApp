@@ -10,12 +10,12 @@
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="5dp"
+        android:contentDescription="@string/dotted1"
         android:layerType="software"
         android:src="@drawable/dotted"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/exercises"
-        tools:ignore="ImageContrastCheck"
-        tools:layout_editor_absoluteX="0dp"
-        android:contentDescription="@string/dotted1" />
+        tools:ignore="ImageContrastCheck" />
 
     <ImageView
         android:id="@+id/dotted2cardio"
@@ -275,16 +275,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/pic4"
         tools:ignore="ImageContrastCheck" />
-
-    <TextView
-        android:id="@+id/text_cardio"
-        android:layout_width="29dp"
-        android:layout_height="28dp"
-        android:layout_gravity="center_horizontal"
-        android:textAlignment="center"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/fab"
