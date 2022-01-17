@@ -3,3 +3,6 @@ I've been working on this workout app for about a day and a half. I plan on maki
 
 #11-16-phase3
 All screens besides the main menu screen have been implemented
+
+#1-16
+Final UI project added, the finalproject zip has the entire app
