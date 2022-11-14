@@ -6,3 +6,6 @@ All screens besides the main menu screen have been implemented
 
 #1-16
 Final UI project added, the finalproject zip has the entire app
+
+#11-14-2022
+Cleaned up project page, fixed slight issue to make it compatible with Pixel 2 API 30 2
